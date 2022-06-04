@@ -1,0 +1,684 @@
+* {
+    box-sizing: border-box;
+    transition: 300ms;
+}
+html{
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul li {
+    list-style-type: none !important;
+}
+
+
+/* ============ header =========== */
+/* ------------------------------ */
+
+header {
+    background-image: url(assets/images/pexels-kaboompics-com-5938.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.671);
+    height: 100vh;
+    
+
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu {
+    margin-right: 50px;
+}
+
+.menu a {
+    margin-left: 20px;
+    padding-bottom: 5px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    color: #fff;
+    transition: 50ms;
+
+}
+
+.menu a:hover {
+    border-bottom: #63cc86 solid 2px;
+}
+
+
+
+.img-logo {
+    width: 100px;
+    margin: 20px 0;
+    margin-left: 20px;
+}
+
+
+.menu-icon {
+    display: none;
+}
+
+
+
+
+/* ============ intro =========== */
+/* ------------------------------ */
+
+
+.text-intro {
+
+    align-items: center;
+    color: #fff;
+    margin-top: 9%;
+}
+
+.text-intro h1 {
+    font-size: 45px;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+
+
+}
+
+.text-intro a {
+    border: 1px solid #63cc86;
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 200;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+
+.text-intro a:hover {
+    background-color: #63cc86;
+    color: #fff;
+}
+
+.hungry {
+    background-color: #63cc86;
+
+}
+
+
+/* ============ product =========== */
+/* ------------------------------ */
+
+.product {
+    text-align: center;
+    margin-top: 5.5rem;
+    font-family: sans-serif;
+
+}
+
+h2 {
+    font-size: 250%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px !important;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.884);
+    margin-bottom: 9.2rem;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+
+}
+
+
+
+.border {
+    display: inline-block;
+    width: 10%;
+    margin-bottom: 2.2rem;
+}
+
+
+
+.products-card {
+    margin-top: 50px;
+    font-size: 90%;
+    line-height: 145%;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.products-card p {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Lato', 'Arial', sans-serif;
+
+}
+
+.products-card h5 {
+    margin-bottom: 10px;
+}
+
+.products-cards {
+    text-align: left;
+}
+
+.products-cards i {
+    font-size: 450%;
+    display: block;
+    color: #63cc86;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* ============ meals =========== */
+/* ------------------------------ */
+
+
+.meals {
+    margin: 10rem auto;
+    align-items: center;
+}
+
+.meals ul {
+    margin-right: 2%;
+
+}
+
+.meals ul img {
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 10px;
+
+}
+
+.meals ul li {
+    overflow: hidden;
+    margin-top: 20px;
+
+}
+
+.meals ul img:hover {
+    transform: scale(1.3);
+    border-radius: 10px;
+
+
+
+}
+
+
+.list-meal ul {
+    margin-left: 0;
+    list-style-type: none;
+
+}
+
+/* ============ works =========== */
+/* ------------------------------ */
+
+
+
+.works {
+    max-height: 1000px;
+    margin: 100px 0;
+    background-color: rgba(85, 85, 85, 0.062);
+    padding: 100px 0;
+
+}
+
+
+.works-title {
+    text-align: center;
+
+}
+
+.works-text {
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.num {
+    font-family: "lato";
+    border: solid 2px #63cc86;
+    color: #63cc86;
+    padding: 10px 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.iphone {
+
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+
+
+#iphone {
+    width: 200px;
+    position: absolute;
+    top: 400px;
+    opacity: 0;
+    transition: .6s;
+
+
+}
+
+.list-works {
+    /* border: solid 1px red; */
+    margin-bottom: 20px;
+
+
+}
+
+.list-works p {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 50px;
+
+
+
+
+}
+
+
+.allAndroid {
+    justify-content: space-around;
+    align-items: center;
+    /* border: #63cc86 1px solid; */
+}
+
+
+.android {
+    width: 40%;
+}
+
+
+
+
+
+
+
+/* ============ cities =========== */
+/* ------------------------------ */
+
+.cities {
+    margin-top: 400px;
+    transition: 1.5s;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 100;
+}
+
+.cities-title {
+    text-align: center;
+}
+
+.cities-card {
+    opacity: 0;
+
+
+}
+
+
+.cities-cards {
+    margin-bottom: 20px;
+    text-align: left;
+
+}
+
+.cities-cards img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.city-feature i {
+    font-size: 150%;
+    color: #63cc86;
+    margin-right: 10px;
+
+}
+
+.cities-cards a {
+    color: #63cc86;
+}
+
+
+i {
+    background-color: #fff;
+}
+
+
+
+
+
+/* ============ customer =========== */
+/* ------------------------------ */
+
+.customer {
+
+    margin-top: 100px;
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.74)), url(assets/img/pexels-trang-doan-1092730.jpg);
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 500px;
+    align-items: center;
+
+
+}
+
+.customers {
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+
+
+.customer-title h2,
+cite,
+blockquote {
+    color: #fff !important;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 100;
+
+}
+
+.block {
+    position: relative;
+    margin-top: 50px;
+    color: #fff !important;
+    text-align: start;
+
+}
+
+blockquote {
+    margin-bottom: 10px;
+}
+
+blockquote::before {
+    content: "\201C";
+    position: absolute;
+    font-weight: bold;
+    font-size: 4em;
+    color: #63cc86;
+    top: -60px;
+    left: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+cite img {
+
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* ============ plans =========== */
+/* ------------------------------ */
+
+.plans {
+    text-align: center;
+    background-color: rgba(85, 85, 85, 0.062);
+    padding: 80px 0;
+
+}
+
+.plans-cards {
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.plans-cards h5,
+p {
+    font-family: 'Lato', 'Arial', sans-serif !important;
+    font-weight: 100 !important;
+
+}
+
+
+.plans-cards ul {
+    border-bottom: 1px rgba(0, 0, 0, 0.068) solid;
+    margin-bottom: 20px;
+}
+
+.plans-card {
+    padding: 30px 10px;
+    max-width: 350px;
+    margin: 20px 5px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.butn {
+    text-align: center;
+    display: inline-block;
+    color: #63cc86;
+    border: solid 1px #63cc86;
+    border-radius: 30px;
+    padding: .75rem 3rem;
+
+}
+
+.butn:hover,
+.but {
+    background-color: #63cc86;
+    color: #fff;
+}
+
+
+
+.card-top {
+    border-bottom: 1px rgba(0, 0, 0, 0.068) solid;
+    margin-bottom: 20px;
+    padding: 0 25px;
+
+}
+
+.card-top span,
+.card-top+p {
+    color: #63cc86;
+    font-size: 2.5rem;
+}
+
+.card-top>p {
+    color: #63cc86;
+
+}
+
+
+/* ============ contact =========== */
+/* ------------------------------ */
+
+.contact {
+    margin: 100px 0;
+    text-align: center;
+}
+
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 7px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+
+
+.butt-form {
+    float: left;
+    margin-top: 20px;
+    padding: 5px 20px;
+    border: solid 1px #63cc86;
+    border-radius: 30px;
+    background-color: #63cc86;
+    color: #fff;
+
+}
+
+.butt-form:hover {
+    float: left;
+    margin-top: 20px;
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #63cc86;
+
+}
+
+
+/* =======footer========= */
+footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+    /* background-color: #517fa4; */
+    /* display: inline-block; */
+    /* text-align: center; */
+    /* margin: 0 auto; */
+}
+
+.social-links i {
+    color: #888;
+    ;
+    background-color: #333;
+    font-size: 30px;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 0px;
+}
